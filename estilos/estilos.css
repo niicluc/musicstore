@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62,5%; 
+}
+/*GRIDS*/
+.menuYLogo { 
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.3fr 2.4fr 0.1fr;
+    gap: 9px 9px;
+    grid-template-areas:
+    "logo logo logo logo"
+    "menuP menuP menuP menuP"
+    "carrousel carrousel carrousel carrousel"
+    "cds cds cds cds"
+    "footer footer footer footer";
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center; 
+
+}
+.gridContacto {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.1fr 0.3fr 0.1fr;
+    gap: 9px 9px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "logo logo logo logo"
+    "menuP menuP menuP menuP"
+    "contactanos contactanos contactanos contactanos"
+    "formularioContacto formularioContacto formularioContacto formularioContacto"
+    "footer footer footer footer";
+}
+
+.gridEnvios {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr 0,6fr 0.1fr;
+    gap: 9px 9px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "logo logo logo logo"
+    "menuP menuP menuP menuP"
+    "enviosTexto enviosTexto enviosTexto enviosTexto"
+    "cuadroEnvio cuadroEnvio cuadroEnvio cuadroEnvio"
+    "footer footer footer footer";
+}
+
+.gridNovedades {  
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr 2fr 0.1fr;
+    gap: 9px 9px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "logo logo logo logo"
+    "menuP menuP menuP menuP"
+    "novedadesTexto novedadesTexto novedadesTexto novedadesTexto"
+    "musicaSpotify musicaSpotify musicaSpotify musicaSpotify"
+    "footer footer footer footer";
+}
+
+.gridPromos {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr 0,6fr 0.1fr;
+    gap: 9px 9px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "logo logo logo logo"
+    "menuP menuP menuP menuP"
+    "promosTexto promosTexto promosTexto promosTexto"
+    "cuadrosPromo cuadrosPromo cuadrosPromo cuadrosPromo"
+    "footer footer footer footer";
+}
+/*aca termina grids*/
+
+/*Propiedades grids */
+.logo{
+    grid-area: logo;
+}
+.menuP{
+    grid-area: menuP;
+    background-color: #00cbf3; 
+    width:100%;
+    text-align:center;
+
+}
+.carrousel{
+    grid-area: carrousel;
+}
+.discosTitulo{
+    grid-area: discosTitulo;
+    text-align:center;
+    /* background-color: #00cbf3; */
+    background-image: linear-gradient(to left, #00cbf3 , #ffffff , #00cbf3);
+    width:100%;
+    height:100% ;
+}
+.cds{
+    grid-area: cds;
+}
+.contactanos{
+    grid-area: contactanos;
+    text-align:center;
+    background-image: linear-gradient(to left, #00cbf3 , #ffffff , #00cbf3);
+    width:100%;
+    height:100% ;
+}
+.formularioContacto{
+    grid-area: formularioContacto;
+}
+
+.enviosTexto{
+    grid-area: enviosTexto;
+    text-align:center;
+    background-image: linear-gradient(to left, #00cbf3 , #ffffff , #00cbf3);
+    width:100%;
+    height:100% ;
+}
+
+.cuadroEnvio{
+    grid-area: cuadroEnvio;
+}
+
+.novedadesTexto{
+    grid-area: contactanos;
+    text-align:center;
+    background-image: linear-gradient(to left, #00cbf3 , #ffffff , #00cbf3);
+    width:100%;
+    height:100% ;
+}
+
+.musicaSpotify{
+    grid-area: musicaSpotify;
+}
+
+.promosTexto{
+    grid-area: contactanos;
+    text-align:center;
+    background-image: linear-gradient(to left, #00cbf3 , #ffffff , #00cbf3);
+    width:100%;
+    height:100% ;
+}
+
+.cuadrosPromo{
+    grid-area: cuadrosPromo;
+}
+
+.footerG{
+    grid-area: footer;
+    background-color: #000000; 
+    width:100%;
+    height:100% ;
+
+}
+/*aca termina propiedades grids*/
+
+
+.headerLog{
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-left: 200px; 
+}
+
+.menu li{
+    text-align:center;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000; 
+}
+
+.menu li a{
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+}
+
+.menu li:hover ul{
+    text-align:center;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000; 
+    background-color: #00cbf3; 
+}
+/* quiero que mi menú quede centrado, puse el text align: center, pero no ocurre que cambia como en el footer */
+.carrouselFondo{
+    grid-area: carrousel;
+}
+.carrousel{
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-left: 300px; 
+}
+
+.h2T{
+    /*grid-area: carrousel;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.disco1{
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-bottom: 10px;
+    margin-left: 300px; 
+}
+
+.centrarImg{
+    text-align:center ;
+}
+
+.botonComprar{
+    background-color:#ffffff ;
+    text-align:center ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.botonComprar div{
+    width: 300px;
+    height: 330px;
+    background-color:#ffffff;
+    color:#000000;
+    border: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+    margin: 10px;
+}
+
+.botonComprar a{
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+.consultaChat{
+/*la idea acá sería cargar una imagen, tipo chat ¿se puede? nose bien como */
+    position: fixed;
+    top: 650px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.consultaChat div{
+    border: 6px solid #00cbf3;
+}
+
+.sectionNovedadesMusica{
+    background-color:#000000 ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items: center;
+
+}
+.sectionNovedadesMusica div{
+    background-color:#000000 ;
+    width: 260px;
+    height: 510px;
+    background-color:#000000;
+    color:#ffffff;
+    border: 2px solid #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+    margin: 10px;
+
+}
+
+.h2P{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*felxbox promociones */
+.promociones{
+    background-color:#ffffff;
+    padding:20px 0;
+    height: 180px ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items: center;
+    width:1400px;
+}
+
+.promociones div{
+    width: 150px;
+    height: 150px;
+    background-color:#000000;
+    color:#ffffff;
+    border: 6px solid #00cbf3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+    margin: 20px;
+}
+
+.promocionesSUB{
+    text-align:center;
+    background-color:#ffffff;
+    padding:20px 0;
+    height: 180px ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+}
+
+.promocionesSUB div{
+    width: 150px;
+    height: 150px;
+    background-color:#000000;
+    color:#ffffff;
+    border: 6px solid #00cbf3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 10px 500px 15px 50px;
+}
+/*aca termina flexbox promociones*/
+
+/*Flexbox envios*/
+.sectionEnvios{
+    background-color:#ffffff ;
+    text-align:center ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    align-content: center;
+    width:1500px;
+}
+
+.sectionEnvios div{
+    width: 150px;
+    height: 30px;
+    background-color:#ffffff;
+    color:#000000;
+    border: 2px solid#00cbf3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+    margin: 10px;
+}
+
+.sectionEnviosT{
+    background-color:#ffffff ;
+    text-align:center ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    align-content: center;
+    width:1500px;
+}
+
+.sectionEnviosT div{
+    width: 150px;
+    height: 30px;
+    background-color:#000000;
+    color:#00cbf3;
+    border: 2px solid#00cbf3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+    margin: 10px;
+}
+/*aca termina flexbox envios*/
+
+.pFont{
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+/*flexbox contactos*/
+
+.formularioContacto{
+    background-color:#ffffff ;
+    text-align:center ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    width:1500px;
+
+}
+
+.formularioContacto div{
+    width: 700px;
+    height: 400px;
+    background-color:#000000;
+    color:#00cbf3;
+    border: 2px solid#ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+    margin: 10px;
+}
+
+    .formularioC{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-align:center;
+}
+
+#footer{
+    background-color:#000000 ;
+    text-align:center ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+    color: #fff;
+}
+
+.footerT a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff; 
+}
+
+/*RESPONSIVE INDEX*/
+
+/*TABLET*/
+@media screen and (max-width: 1024px){
+.menuYLogo { 
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (4, 0,2fr);
+    width:1024px;
+    }
+
+.botonComprar{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    width: 1024px;
+    padding-left: 200px;
+    }
+
+.botonComprar div{
+    width: 330px;
+    height: 330px;
+    border: 2px;
+    margin: 10px;
+    }
+
+.discosTitulo{
+    grid-area: discosTitulo;
+    width:100;
+
+    }
+
+.consultaChat{
+    position: none;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+
+    }
+
+}
+
+/*CELULAR*/
+@media screen and (max-width: 500px){
+.menu li{
+    display: block;
+    position: relative;
+    font-size: 30px;
+    color: #000000; 
+    background-color: #ffffff; 
+    }
+
+.menu li a{
+        background-color: #ffffff; 
+    }
+    
+.menu li:hover ul{
+    color: #000000; 
+    background-color: #00cbf3; 
+    }
+
+.h2T{
+    font-size: 40px;
+    }
+
+.menuYLogo { 
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (4, 0,2fr);
+    }
+    
+    .botonComprar{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+    padding-left: 200px;
+    }
+    
+.botonComprar div{
+    width: 330px;
+    height: 330px;
+    border: 2px;
+
+}
+
+.discosTitulo{
+    grid-area: discosTitulo;
+    width:100px;
+}
+
+.consultaChat{
+    position: none;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+}
+#footer{
+    font-size: 25px;
+}
+
+}
+
+/* aca termina responsive index*/
+
+/*RESPONSIVE PROMOS*/
+
+/*Tablet*/
+@media screen and (max-width: 1024px){
+.gridPromos { 
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (3, 0,2fr);
+
+}
+
+.h2P{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#footer{
+    font-size: 20px;
+}
+
+.promociones{
+    padding:20px 0;
+    height: 180px ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: center;
+    width:1024px;
+}
+
+.promociones div{
+    width: 200px;
+    height: 200px;
+    border: 6px solid #00cbf3;
+    text-align:center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.promocionesSUB{
+    padding:20px 0;
+    height: 180px ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.promocionesSUB div{
+    width: 150px;
+    height: 180px;
+    border: 6px solid #00cbf3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 10px 500px 15px 50px;
+    margin: 25px;
+    font-size: 20px;
+}
+
+}
+
+/*celular*/
+
+@media screen and (max-width: 500px){
+
+.gridPromos { 
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (4, 0,2fr);
+}   
+.promociones{
+    padding:30px 0;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-items: center;
+    width:500px;
+}
+
+.promociones div{
+    width: 300px;
+    height: 400px;
+    border: 6px solid #00cbf3;
+    text-align:center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.promocionesSUB{
+    padding:20px 0;
+    height: 180px ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.promocionesSUB div{
+    width: 150px;
+    height: 180px;
+    border: 6px solid #00cbf3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 10px 500px 15px 50px;
+    margin: 25px;
+    font-size: 20px;
+}
+
+#footer{
+    font-size: 25px;
+}
+
+}
+
+/*RESPONSIVE NOVEDADES*/
+
+/*tablet*/
+
+@media screen and (max-width: 1024px){
+    .gridNovedades { 
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (4, 0,2fr);
+    }   
+
+.sectionNovedadesMusica{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+
+.sectionNovedadesMusica div{
+    width: 200px;
+    height: 1500px;
+    border: 2px solid #000000;
+    margin: 20px;
+}
+#footer{
+    font-size: 20px;
+}
+
+}
+
+/*celular*/
+@media screen and (max-width: 500px){
+
+.gridNovedades { 
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (4, 0,2fr);
+} 
+
+.sectionNovedadesMusica{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.sectionNovedadesMusica div{
+    width: 900px;
+    height: 500px;
+    border: 2px solid #000000;
+    margin: 10px;
+}
+#footer{
+    font-size: 25px;
+    height: 80px;
+    }
+}
+/* TRANCISIONES*/
+/*Index: imagenes de los cds*/
+
+.imagencd img{
+    width:300px;
+    transition: width 1s;
+}
+
+.imagencd img:hover{
+    width:320px;
+}
