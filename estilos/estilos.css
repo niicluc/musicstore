@@ -111,8 +111,8 @@ html{
 }
 .discosTitulo{
     grid-area: discosTitulo;
-    text-align:center;
-    background-color: #00cbf3; 
+    text-align:center; 
+    background-image: linear-gradient(to left, #00cbf3 , #ffffff , #00cbf3);
     width:100%;
 
 }
@@ -401,7 +401,7 @@ html{
     height: 30px;
     background-color:#ffffff;
     color:#000000;
-    border: 2px solid#00cbf3;
+    border: 2px solid #00cbf3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     text-align:center;
     margin: 10px;
@@ -423,7 +423,7 @@ html{
     height: 30px;
     background-color:#000000;
     color:#00cbf3;
-    border: 2px solid#00cbf3;
+    border: 2px solid #00cbf3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     text-align:center;
     margin: 10px;
@@ -461,7 +461,7 @@ html{
     height: 400px;
     background-color:#000000;
     color:#00cbf3;
-    border: 2px solid#ffffff;
+    border: 2px solid #ffffff;
 }
 .container{
     display:flex;
@@ -733,4 +733,15 @@ a:visited {
     align-items:center;
 }
 
+}
+/* TRANCISIONES*/
+/*Index: imagenes de los cds*/
+
+.imagencd img{
+    width:300px;
+    transition: width 1s;
+}
+
+.imagencd img:hover{
+    width:320px;
 }
