@@ -12,7 +12,7 @@
     <div class="gridPromos">
         <header class="logo">
             <div class="centrarImg">
-                <img src="../multimedia/im3.png" class="headerLog">
+                <a href="../index.html"><img src="../multimedia/im3.png"  class="headerLog"></a>
             </div>
         </header>
 
@@ -27,34 +27,40 @@
         </nav>
     </header>
 
-    <main>
+    <main class="mainP">
         <section class="promosTexto cuadrosPromo">
             <h2 class="h2P">NUESTRAS PROMOS</h2>
         </section>
+        <div class="container">
 
         <section class="promociones">
-            <div><b>LUNES:</b> 20% OFF en productos seleccionados</div>
-            <div><b>MARTES:</b> 6 y 12 cuotas sin interes con tarjeta visa</div>
-            <div><b>MIERCOLES:</b>Con Banco Galicia tenes un 15% en todos los productos y hasta 3 cuotas sin interes</div>
+            <div class="promocionesContainer">LUNES: 20% OFF en productos seleccionados</div>
+            <div class="promocionesContainer">MARTES: 6 y 12 cuotas sin interes con tarjeta visa</div>
+            <div class="promocionesContainer">MIERCOLES:Con Banco Galicia tenes un 15% en todos los productos y hasta 3 cuotas sin interes</div>
 
         </section>
 
-        <section class="promocionesSUB cuadrosPromo">
-        <!-- <div><b>JUEVES:</b>Compra 2 cds y llevate el segundo con un 25% OFF</div>  -->
-            <div> 
-                <p> Suscribite y con la primera compra tenes un 10%off adicional!</p>
-                <input type="email" placeholder="Ingrese su mail" value="email" name="email"> 
-                <input type="checkbox" name="" id="" value="1"> Acepta los terminos y condiciones
-                <input type="checkbox" name="" id="" value="2"> Enviar promociones
-                <input type="submit" value="Suscribirse"> 
-            </div>
+        <section class="promocionesSUB">
+            <p> Suscribite y con la primera compra tenes un 10%off adicional!</p>
+                <input class="imputEmail" type="email" placeholder="Ingrese su mail" value="email" name="email"> 
+                <div>
+                    <div>
+                        <input type="checkbox" name="" id="" value="1"> 
+                        <span>Acepta los terminos y condiciones</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="" value="2"> 
+                        <span>Enviar promociones</span>
+                    </div>
+                </div>
+                <input type="submit" value="Suscribirse">  
         </section>
     </main>
 
-        <div class="consultaChat"> ¿tenes alguna consulta?</div>
+        <!--<div class="consultaChat"> ¿tenes alguna consulta?</div> -->
 
 
-    <footer id="footer" class="footerT visited footerG">
+        <footer id="footer" class="footerT">
         <p> 
             <a href="../index.html"> Home |</a> 
             <a href="contacto.html">Contactanos |</a>
