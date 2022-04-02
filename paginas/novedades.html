@@ -1,60 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novedades | Music Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="icon" href="../multimedia/favicon.ico">
 </head>
+
 <body>
     <!--<div class="gridNovedades"> -->
-        <div class="gridEnvios2">
-            <header class="logo">
-                <div class="centrarImg">
+    <div class="gridEnvios2">
+        <header class="logo">
+            <div class="centrarImg">
                 <a href="../index.html"><img src="../multimedia/im3.png"></a>
-                </div>
-            </header>
-    
-            <header class="menuP">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="novedades.html">Novedades</a></li>
-                        <li><a href="promos.html">Promos</a></li>
-                        <li><a href="envios2.html">Envios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+            </div>
+        </header>
+
+        <header class="menuP">
+            <nav>
+                <div class="container menuPincipalN">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promos.html">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="envios2.html">Envios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </nav>
-            </header>
+                </div>
+            </nav>
+        </header>
 
-    <main class="main">
-        <section class="novedadesTexto">
-        <h2 class="h2P"> Novedades del mes</h2>
-        </section>
 
-        <section class="sectionNovedadesMusica musicaSpotify">
-            <div> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5pkQpJAHxy9BzwA7E1UWxF?utm_source=generator" width="250" height="500" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
-            <div> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/13lMLnHs5qsmm687oRc3VC?utm_source=generator" width="250" height="500" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
-            <div> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0e1WaSNDZnoPixaxDNdWo4?utm_source=generator" width="250" height="500" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
-            <div> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1ETtnOFdO0JSOy0SRLAmTC?utm_source=generator" width="250" height="500" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
-            <div> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0Q5XBpCYFgUWiG9DUWyAmJ?utm_source=generator" width="250" height="500" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
-        </section>
-    </main>
+        <main class="main">
+            <section class="novedadesTexto">
+                <h2 class="h2P"> Novedades del mes</h2>
+            </section>
 
-    <!--<section>
+            <section class="sectionNovedadesMusica musicaSpotify">
+                <div> <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/5pkQpJAHxy9BzwA7E1UWxF?utm_source=generator"
+                        width="250" height="500" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div> <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/13lMLnHs5qsmm687oRc3VC?utm_source=generator"
+                        width="250" height="500" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div> <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/0e1WaSNDZnoPixaxDNdWo4?utm_source=generator"
+                        width="250" height="500" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div> <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/1ETtnOFdO0JSOy0SRLAmTC?utm_source=generator"
+                        width="250" height="500" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div> <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/0Q5XBpCYFgUWiG9DUWyAmJ?utm_source=generator"
+                        width="250" height="500" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </section>
+        </main>
+
+        <!--<section>
         <div class="consultaChat"> ¿tenes alguna consulta?</div>
     </section> -->
 
-    <footer id="footer" class="footerT">
-        <p> 
-            <a href="../index.html"> Home |</a> 
-            <a href="contacto.html">Contactanos |</a>
-            <a href="https://www.instagram.com/"> Instagram |</a> 
-            <a href="https://www.facebook.com/"> Facebook |</a> 
-            <a href="https://niiclucarelli.000webhostapp.com/"> Made by Niic© |</a> 
-        </p>   
-    </footer>
+        <footer id="footer" class="footerT">
+            <p>
+                <a href="../index.html"> Home |</a>
+                <a href="contacto.html">Contactanos |</a>
+                <a href="https://www.instagram.com/"> Instagram |</a>
+                <a href="https://www.facebook.com/"> Facebook |</a>
+                <a href="https://niiclucarelli.000webhostapp.com/"> Made by Niic© |</a>
+            </p>
+        </footer>
     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
