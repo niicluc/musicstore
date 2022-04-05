@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +14,12 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="icon" href="../multimedia/favicon.ico">
 </head>
+
 <body>
     <div class="gridContacto">
         <header class="logo">
             <div class="centrarImg">
-                <a href="../index.html"><img src="../multimedia/im3.png"  class="headerLog"></a>
+                <a href="../index.html"><img src="../multimedia/im3.png" width="831" height="238"></a>
             </div>
         </header>
 
@@ -43,42 +45,61 @@
             </nav>
         </header>
 
-    <main class="mainC">
-        <section class="contactanos">
-            <h2 class="h2P">CONTACTANOS</h2>
-        </section>  
+        <main class="mainC">
+            <section class="contactanos">
+                <h2 class="h2P">CONTACTANOS</h2>
+            </section>
+            
+            <div class="container contactoVariable">
+                <p class="textoPC">Por favor rellene los datos y dejanos tu comentario</p>
+                <form class="row g-3 needs-validation" novalidate="">
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" value=""
+                            required="" spellcheck="false" data-ms-editor="true">
+                        <div class="valid-feedback">
+                            ¡se ve genial!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="validationCustom02" value=""
+                            required="" spellcheck="false" data-ms-editor="true">
+                        <div class="valid-feedback">
+                            ¡excelente!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="validationCustom01" value=""
+                            required="" spellcheck="false" data-ms-editor="true">
+                        <div class="valid-feedback">
+                            ¡cool!
+                        </div>
+                    </div>                    
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Deje su comentario" id="floatingTextarea"
+                            style="height: 100px" spellcheck="false" data-ms-editor="true"></textarea>
+                        <label for="floatingTextarea">Consulta</label>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary botonEnviarContacto" type="submit">Enviar</button>
+                    </div>
+                </form>
 
-        <section class="formularioContacto">
-            <div>
-                <p>Ante cualquier duda llene el siguiente formulario</p>
-                <label for="nombre">Ingrese su nombre:</label>
-                <input class="pFont" type="text" placeholder="Ingrese su nombre" value="nombre" name="nombre">
-                <label for="email">Ingrese su mail:</label>
-                <input  type="email" placeholder="Ingrese su mail" value="email" name="email"> 
-                <label for="genero">Indique su genero</label>
-                <input type="radio" name="genero" value="mujer">Femenino
-                <input type="radio" name="genero" value="hombre"> Masculino
-                <input type="radio" name="genero" value="no especifica"> Prefiero no especificar
-                <textarea class="pFont"name="" id="" cols="70" rows="10" placeholder="Dejenos su consulta aqui"></textarea>
-                <input type="submit" value="Enviar"> 
-                <input type="reset" value="Resetear formulario"> 
             </div>
-        </section>
-    </main>
 
-    <!--<section>
-        <div class="consultaChat"> ¿tenes alguna consulta?</div>
-    </section> -->
+        </main>
 
-    <footer id="footer" class="footerT">
-        <p> 
-            <a href="../index.html"> Home |</a> 
-            <a href="contacto.html">Contactanos |</a>
-            <a href="https://www.instagram.com/"> Instagram |</a> 
-            <a href="https://www.facebook.com/"> Facebook |</a> 
-            <a href="https://niiclucarelli.000webhostapp.com/"> Made by Niic© |</a> 
-        </p>
-    </footer>
+        <footer id="footer" class="footerT">
+            <p>
+                <a href="../index.html"> Home |</a>
+                <a href="contacto.html">Contactanos |</a>
+                <a href="https://www.instagram.com/"> Instagram |</a>
+                <a href="https://www.facebook.com/"> Facebook |</a>
+                <a href="https://niiclucarelli.000webhostapp.com/"> Made by Niic© |</a>
+            </p>
+        </footer>
     </div>
 
 
@@ -91,4 +112,5 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

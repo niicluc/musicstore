@@ -10,9 +10,13 @@ html {
 /*GRIDS*/
 .menuYLogo {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 2.4fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 2.4fr 0.1fr 0.1fr;
     gap: 9px 9px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
     grid-template-areas:
         "logo logo logo logo"
         "menuP menuP menuP menuP"
@@ -20,16 +24,11 @@ html {
         "mainI mainI mainI mainI"
         "mainI mainI mainI mainI"
         "footerT footerT footerT footerT";
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
+    }
 .gridContacto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr 0, 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr , 6fr 0.1fr;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -45,7 +44,7 @@ html {
 .gridEnvios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr 0.2fr 0, 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr 0.2fr , 6fr 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -64,7 +63,7 @@ html {
     /*es el del html novedades*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr 0, 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr , 6fr 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -81,7 +80,7 @@ html {
 .gridPromos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr 0, 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr , 6fr 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -205,12 +204,12 @@ html {
 
 /*aca termina propiedades grids*/
 
-.headerLog {
+/*.headerLog {
     margin-top: 10px;
     margin-right: 90px;
     margin-bottom: 10px;
     margin-left: 200px;
-}
+}*/
 
 .menu li {
     text-align: center;
@@ -327,6 +326,7 @@ html {
 }
 
 /*felxbox promociones */
+/*
 .promociones {
     background-color: #ffffff;
     padding: 20px 0;
@@ -337,6 +337,17 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+} */
+
+.promosConSem{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin:10px;
 }
 
 .promocionesContainer {
@@ -568,132 +579,15 @@ a:visited {
     }
 
     .tamañoFuente {
-        font-size: 25px;
+        font-size: 15px;
     }
+
 }
 
 /* aca termina responsive index*/
 
-/*RESPONSIVE PROMOS*/
-
-/*Tablet*/
-/*
-@media screen and (max-width: 1024px){
-.gridPromos { 
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (3, 0,2fr);
-
-}
-
-.h2P{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-#footer{
-    font-size: 20px;
-}
-
-.promociones{
-    padding:20px 0;
-    height: 180px ;
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    align-items: center;
-
-}
-
-.promociones div{
-    width: 200px;
-    height: 200px;
-    border: 6px solid #00cbf3;
-    text-align:center;
-    font-size: 20px;
-    margin: 20px;
-}
-
-.promocionesSUB{
-    padding:20px 0;
-    height: 180px ;
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    align-items: center;
-    
-    
-}
-
-.promocionesSUB div{
-    width: 150px;
-    height: 180px;
-    border: 6px solid #00cbf3;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    margin: 25px;
-    font-size: 20px;
-}
-
-}
-
-/*celular*/
-
-/*
-
-@media screen and (max-width: 500px){
-
-.gridPromos { 
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (4, 0,2fr);
-}   
-.promociones{
-    padding:30px 0;
-    display: flex;
-    flex-direction:column;
-    flex-wrap:nowrap;
-    align-items: center;
-    width:500px;
-}
-
-.promociones div{
-    width: 300px;
-    height: 400px;
-    border: 6px solid #00cbf3;
-    text-align:center;
-    font-size: 20px;
-    margin: 20px;
-}
-
-.promocionesSUB{
-    padding:20px 0;
-    height: 180px ;
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    align-items: center;
-}
-
-.promocionesSUB div{
-    width: 150px;
-    height: 180px;
-    border: 6px solid #00cbf3;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    padding: 10px 500px 15px 50px;
-    margin: 25px;
-    font-size: 20px;
-}
-
-#footer{
-    font-size: 25px;
-}
-
-}
-*/
 /*RESPONSIVE NOVEDADES*/
-
-/*tablet*/
+/*Index*/
 
 @media screen and (max-width: 1024px) {
     .gridNovedades {
@@ -724,6 +618,113 @@ a:visited {
         flex-wrap: wrap;
         align-items: center;
     }
+    img {
+        width: 80%;
+        height: auto;
+    }
+    .tamañoFuente {
+        font-size: 15px;
+    }
+
+}
+
+/*RESPONSIVE ENVIOS*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+    .gridEnvio {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+    .gridEnvio {
+        display: grid;
+        grid-template-columns: repeat (1fr);
+        grid-template-rows: repeat (4, 1fr);
+    }
+img {
+    width: 80%;
+    height: auto;
+}
+.tamañoFuente {
+    font-size: 15px;
+}
+}
+
+/*RESPONSIVE CONTACTO*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+    .gridContacto {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+    .gridContacto {
+        display: grid;
+        grid-template-columns: repeat (1fr);
+        grid-template-rows: repeat (4, 1fr);
+    }
+img {
+    width: 80%;
+    height: auto;
+}
+.tamañoFuente {
+    font-size: 15px;
+}
+}
+
+/*RESPONSIVE PROMOS*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+    .gridPromos {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+    }
+    .promosConSem{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .textoCent{
+        margin:20px;
+    }
+}
+/*Celular*/
+@media screen and (max-width: 500px) {
+.gridPromos {
+    display: grid;
+    grid-template-columns: repeat (1fr);
+    grid-template-rows: repeat (4, 1fr);
+}
+.promosConSem{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.textoCent{
+    margin:20px;
+}
+img {
+    width: 80%;
+    height: auto;
+}
+.tamañoFuente {
+    font-size: 15px;
+}
 }
 
 /* TRANCISIONES*/
@@ -772,4 +773,60 @@ a:visited {
 .tablaEnvios th {
     color: #00cbf3;
     background-color: #000000;
+}
+
+/*contacto*/
+.contactoVarible{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+.botonEnviarContacto{
+    background-color: #00cbf3;
+    color:#000000;
+    margin:10px 0px;
+}
+.botonEnviarContacto button:hover {
+background-color: #000000;
+color: #ffffff;
+}
+.botonMailC{
+    width:50px;
+}
+.TextoPC{
+    text-align: center;
+}
+
+/*promos*/
+.textoCent{
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*novedades*/
+.botonesNovedades{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+}
+.botonNov{
+    margin: 10px;
+    background-color: #000000;
+    color: #00cbf3;
+}
+
+.botonNow a{
+    text-decoration: none;
+    color:#ffffff;
+    text-align: center;
+}
+.botonNov a:visited {
+    color: #00cbf3;
+}
+.botonNov a:hover {
+    color: #ffffff;
 }
