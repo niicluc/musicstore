@@ -24,11 +24,12 @@ html {
         "mainI mainI mainI mainI"
         "mainI mainI mainI mainI"
         "footerT footerT footerT footerT";
-    }
+}
+
 .gridContacto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr , 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr, 6fr 0.1fr;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -44,7 +45,7 @@ html {
 .gridEnvios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr 0.2fr , 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr 0.2fr, 6fr 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -60,10 +61,10 @@ html {
 }
 
 .gridEnvios2 {
-    /*es el del html novedades*/
+/*es el del html novedades*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr , 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr, 6fr 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -80,7 +81,7 @@ html {
 .gridPromos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr , 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr, 6fr 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -205,12 +206,7 @@ html {
 
 /*aca termina propiedades grids*/
 
-/*.headerLog {
-    margin-top: 10px;
-    margin-right: 90px;
-    margin-bottom: 10px;
-    margin-left: 200px;
-}*/
+/*Estilos Index, Promo, Novedades, Contacto, Envios*/
 
 .menu li {
     text-align: center;
@@ -218,24 +214,21 @@ html {
     position: relative;
     font-size: 20px;
     padding: 10px 10px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     color: #000000;
 }
 
 .menu li a {
     text-align: center;
     text-decoration: none;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     color: #000000;
 }
 
 .menu li:hover ul {
     text-align: center;
     display: block;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     color: #000000;
     background-color: #00cbf3;
 }
@@ -245,8 +238,7 @@ html {
 }
 
 .h2T {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -266,8 +258,7 @@ html {
 .botonComprar {
     background-color: #ffffff;
     text-align: center;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -282,8 +273,7 @@ html {
     background-color: #ffffff;
     color: #000000;
     border: 2px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     text-align: center;
     margin: 10px;
 }
@@ -291,8 +281,7 @@ html {
 .botonComprar a {
     text-align: center;
     text-decoration: none;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
 }
 
 .sectionNovedadesMusica {
@@ -311,36 +300,20 @@ html {
     background-color: #000000;
     color: #ffffff;
     border: 2px solid #000000;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     text-align: center;
     margin: 10px;
 }
 
 .h2P {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     color: rgb(0, 0, 0);
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
 }
 
-/*felxbox promociones */
-/*
-.promociones {
-    background-color: #ffffff;
-    padding: 20px 0;
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-} */
-
-.promosConSem{
+.promosConSem {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -348,7 +321,7 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin:10px;
+    margin: 10px;
 }
 
 .promocionesContainer {
@@ -357,8 +330,7 @@ html {
     background-color: #000000;
     color: #ffffff;
     border: 6px solid #00cbf3;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -376,8 +348,7 @@ html {
     background-color: #000000;
     color: #ffffff;
     border: 6px solid #00cbf3;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     gap: 5px;
 }
 
@@ -404,8 +375,7 @@ html {
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #00cbf3;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     text-align: center;
     margin: 10px;
 }
@@ -426,8 +396,7 @@ html {
     background-color: #000000;
     color: #00cbf3;
     border: 2px solid #00cbf3;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     text-align: center;
     margin: 10px;
 }
@@ -449,8 +418,7 @@ html {
 .formularioContacto {
     background-color: #ffffff;
     text-align: center;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -619,10 +587,12 @@ a:visited {
         flex-wrap: wrap;
         align-items: center;
     }
+
     img {
         width: 80%;
         height: auto;
     }
+
     .tamañoFuente {
         font-size: 15px;
     }
@@ -646,13 +616,15 @@ a:visited {
         grid-template-columns: repeat (1fr);
         grid-template-rows: repeat (4, 1fr);
     }
-img {
-    width: 80%;
-    height: auto;
-}
-.tamañoFuente {
-    font-size: 15px;
-}
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
 }
 
 /*RESPONSIVE CONTACTO*/
@@ -672,13 +644,15 @@ img {
         grid-template-columns: repeat (1fr);
         grid-template-rows: repeat (4, 1fr);
     }
-img {
-    width: 80%;
-    height: auto;
-}
-.tamañoFuente {
-    font-size: 15px;
-}
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
 }
 
 /*RESPONSIVE PROMOS*/
@@ -689,7 +663,8 @@ img {
         grid-template-columns: repeat (2, 1fr);
         grid-template-rows: repeat (3, 1fr);
     }
-    .promosConSem{
+
+    .promosConSem {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -697,35 +672,41 @@ img {
         align-items: center;
         width: 100%;
     }
-    .textoCent{
-        margin:20px;
+
+    .textoCent {
+        margin: 20px;
     }
 }
+
 /*Celular*/
 @media screen and (max-width: 500px) {
-.gridPromos {
-    display: grid;
-    grid-template-columns: repeat (1fr);
-    grid-template-rows: repeat (4, 1fr);
-}
-.promosConSem{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.textoCent{
-    margin:20px;
-}
-img {
-    width: 80%;
-    height: auto;
-}
-.tamañoFuente {
-    font-size: 15px;
-}
+    .gridPromos {
+        display: grid;
+        grid-template-columns: repeat (1fr);
+        grid-template-rows: repeat (4, 1fr);
+    }
+
+    .promosConSem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .textoCent {
+        margin: 20px;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
 }
 
 /* TRANCISIONES*/
@@ -777,57 +758,64 @@ img {
 }
 
 /*contacto*/
-.contactoVarible{
+.contactoVarible {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
 }
-.botonEnviarContacto{
+
+.botonEnviarContacto {
     background-color: #00cbf3;
-    color:#000000;
-    margin:10px 0px;
+    color: #000000;
+    margin: 10px 0px;
 }
+
 .botonEnviarContacto button:hover {
-background-color: #000000;
-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
 }
-.botonMailC{
-    width:50px;
+
+.botonMailC {
+    width: 50px;
 }
-.TextoPC{
+
+.TextoPC {
     text-align: center;
 }
 
 /*promos*/
-.textoCent{
+.textoCent {
     text-align: center;
     background-color: #000000;
     color: #ffffff;
 }
 
 /*novedades*/
-.botonesNovedades{
-    display:flex;
+.botonesNovedades {
+    display: flex;
     align-content: center;
     justify-content: center;
     margin: 10px;
 }
-.botonNov{
+
+.botonNov {
     margin: 10px;
     background-color: #000000;
     color: #00cbf3;
 }
 
-.botonNow a{
+.botonNow a {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
     text-align: center;
 }
+
 .botonNov a:visited {
     color: #00cbf3;
 }
+
 .botonNov a:hover {
     color: #ffffff;
 }
