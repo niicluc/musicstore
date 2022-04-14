@@ -99,10 +99,10 @@
 .botonNov {
     margin: 10px;
     background-color: #000000;
-    color: #00cbf3;
+    color: #ffffff;
 }
 
-.botonNow a {
+.botonNov a {
     text-decoration: none;
     color: #ffffff;
     text-align: center;
@@ -110,7 +110,7 @@
 
 .botonNov a {
     &:visited {
-    color: #00cbf3;
+    color: #ffffff;
     }
 
     &:hover {
@@ -142,3 +142,31 @@
 a:visited {
     color: #00cbf3;
 }
+
+/*Mapa*/
+$botonesEnNovedades: ( 
+        ver-mas: #7b7b7b,
+        shop:  #3d3d3d,
+); 
+@each $red, $color in $botonesEnNovedades {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+
+/*Extend*/
+.claseNueva2 {
+    @extend .botonNov;
+    font-size: 10px;
+}
+
+/*Mixin*/
+@mixin sizes($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+.mixIn {
+    @include sizes(90px, 30px);
+}
+
+
