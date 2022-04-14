@@ -1,0 +1,42 @@
+/*RESPONSIVE NOVEDADES*/
+/*Tablet*/
+
+@media screen and (max-width: 1024px) {
+    .gridNovedades {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1 fr;
+    }
+
+    .sectionNovedadesMusica {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+/*celular*/
+@media screen and (max-width: 500px) {
+    .gridNovedades {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .sectionNovedadesMusica {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
+}
