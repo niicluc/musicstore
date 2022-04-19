@@ -1,3 +1,4 @@
+/*CSS NOVEDADES*/
 .gridEnvios2 {
 /*es el del html novedades*/
     display: grid;
@@ -8,7 +9,11 @@
     align-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-areas: "logo logo logo logo" "menuP menuP menuP menuP" "enviosTexto enviosTexto enviosTexto enviosTexto" "main main main main" "footerT footerT footerT footerT";
+    grid-template-areas: "logo logo logo logo" 
+    "menuP menuP menuP menuP" 
+    "enviosTexto enviosTexto enviosTexto enviosTexto" 
+    "main main main main" 
+    "footerT footerT footerT footerT";
 }
 
 .logo {

@@ -95,6 +95,22 @@ html {
         "footerT footerT footerT footerT";
 }
 
+.gridCds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 2.4fr 0.1fr 0.1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "logo logo logo logo"
+        "menuP menuP menuP menuP"
+        "mainCD mainCD mainCD mainCD"
+        "mainCD mainCD mainCD mainCD"
+        "footerT footerT footerT footerT";
+}
+
 /*aca termina grids*/
 
 /*Propiedades grids */
@@ -197,6 +213,12 @@ html {
     grid-area: mainC;
     width: 100%;
 }
+
+.mainCD {
+    grid-area: mainCD;
+    width: 100%;
+}
+
 
 .footerG {
     grid-area: footer;
@@ -313,6 +335,18 @@ html {
     width: 100%;
 }
 
+.linkTex{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.linkTex a{
+    color: #ffffff;
+}
+.cdsLista a:visited{
+    color: #ffffff;
+}
+/*Flexbox Promociones*/
 .promosConSem {
     background-color: #ffffff;
     display: flex;
@@ -322,19 +356,6 @@ html {
     align-items: center;
     width: 100%;
     margin: 10px;
-}
-
-.promocionesContainer {
-    width: 150px;
-    height: 150px;
-    background-color: #000000;
-    color: #ffffff;
-    border: 6px solid #00cbf3;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .promocionesSUB {
@@ -551,6 +572,13 @@ a:visited {
         font-size: 15px;
     }
 
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
 }
 
 /* aca termina responsive index*/
@@ -597,6 +625,13 @@ a:visited {
         font-size: 15px;
     }
 
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
 }
 
 /*RESPONSIVE ENVIOS*/
@@ -625,6 +660,13 @@ a:visited {
     .tamañoFuente {
         font-size: 15px;
     }
+
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
 }
 
 /*RESPONSIVE CONTACTO*/
@@ -652,6 +694,13 @@ a:visited {
 
     .tamañoFuente {
         font-size: 15px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
     }
 }
 
@@ -707,6 +756,58 @@ a:visited {
     .tamañoFuente {
         font-size: 15px;
     }
+
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+}
+
+/*RESPONSIVE CDS*/
+@media screen and (max-width: 1024px) {
+    .gridCds {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 0, 2fr);
+    }
+
+    .botonComprar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .botonComprar div {
+        width: 330px;
+        height: 330px;
+        border: 2px;
+        margin: 10px;
+    }
+
+}
+
+/*CELULAR*/
+@media screen and (max-width: 500px) {
+    .gridCds {
+        display: grid;
+        grid-template-columns: 1 fr 1 fr;
+        grid-template-rows: 1fr,0fr,1fr,1fr,1fr;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
 }
 
 /* TRANCISIONES*/
@@ -719,6 +820,15 @@ a:visited {
 
 .imagencd img:hover {
     width: 320px;
+}
+
+/*Cds: imagen de catalogo cd*/
+.animCD {
+    transition: all 0.4s ease;
+}
+.animCD:hover {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 }
 
 /*bootstrap/*
@@ -818,4 +928,25 @@ a:visited {
 
 .botonNov a:hover {
     color: #ffffff;
+}
+
+/*CDS*/
+.cdsLista {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+
+    padding: 0px 50px 0px 50px;
+}
+
+.propCds {
+    text-align: center;
+    font-weight: 500;
+    background-color: #000000;
+    color: #ffffff;
+    margin:20px;
 }
