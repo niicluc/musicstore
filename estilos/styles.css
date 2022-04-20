@@ -149,8 +149,8 @@ a:visited {
 @media screen and (max-width: 1024px) {
   .menuYLogo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 0, 2fr; }
   .botonComprar {
     display: flex;
     flex-direction: row;
@@ -166,7 +166,7 @@ a:visited {
 @media screen and (max-width: 500px) {
   .menuYLogo {
     display: grid;
-    grid-template-columns: 1 fr 1 fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0, 2fr 0, 2fr 0, 2fr 0, 2fr; }
   .menu li {
     display: list-item;
@@ -204,7 +204,7 @@ a:visited {
   .gridEnvio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat 1fr 1fr 1fr; } }
+    grid-template-rows: 1fr 1fr 1fr; } }
 
 /*Celular*/
 @media screen and (max-width: 500px) {
@@ -228,15 +228,15 @@ a:visited {
 @media screen and (max-width: 1024px) {
   .gridContacto {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; } }
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 1fr; } }
 
 /*Celular*/
 @media screen and (max-width: 500px) {
   .gridContacto {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: repeat 4, 1fr; }
   img {
     width: 80%;
     height: auto; }
@@ -253,8 +253,8 @@ a:visited {
 @media screen and (max-width: 1024px) {
   .gridPromos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 1fr; }
   .promosConSem {
     display: flex;
     flex-direction: row;
@@ -269,8 +269,8 @@ a:visited {
 @media screen and (max-width: 500px) {
   .gridPromos {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: repeat 4, 1fr; }
   .promosConSem {
     display: flex;
     flex-direction: column;
@@ -297,7 +297,7 @@ a:visited {
   .gridCds {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat 1 fr 1fr 1fr; }
+    grid-template-rows: 1fr 1fr 1fr; }
   .botonComprar {
     display: flex;
     flex-direction: row;
@@ -313,8 +313,8 @@ a:visited {
 @media screen and (max-width: 500px) {
   .gridCds {
     display: grid;
-    grid-template-columns: 1 fr 1 fr;
-    grid-template-rows: 1fr,0fr,1fr,1fr,1fr; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0fr 1fr 1fr 1fr; }
   .tamañoFuente {
     font-size: 15px; }
   .responsiveNav {
