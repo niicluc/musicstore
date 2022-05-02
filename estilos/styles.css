@@ -83,15 +83,15 @@
   background-color: #000000;
   color: #00cbf3; }
 
-.botonNow a {
+.botonNov {
   text-decoration: none;
   color: #ffffff;
   text-align: center; }
 
-.botonNov a:visited {
+.botonNov:visited {
   color: #00cbf3; }
 
-.botonNov a:hover {
+.botonNov:hover {
   color: #ffffff; }
 
 #footer {
@@ -143,185 +143,6 @@ a:visited {
     height: auto; }
   .tamañoFuente {
     font-size: 15px; } }
-
-/*RESPONSIVE INDEX*/
-/*TABLET*/
-@media screen and (max-width: 1024px) {
-  .menuYLogo {
-    display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: repeat 3, 0, 2fr; }
-  .botonComprar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; }
-    .botonComprar div {
-      width: 330px;
-      height: 330px;
-      border: 2px;
-      margin: 10px; } }
-
-/*CELULAR*/
-@media screen and (max-width: 500px) {
-  .menuYLogo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0, 2fr 0, 2fr 0, 2fr 0, 2fr; }
-  .menu li {
-    display: list-item;
-    font-size: 15px;
-    color: #000000;
-    background-color: #ffffff;
-    width: 100%; }
-    .menu li a {
-      background-color: #ffffff; }
-    .menu li:hover ul {
-      color: #000000;
-      background-color: #00cbf3; }
-  .h2T {
-    font-size: 20px; }
-  .botonComprar {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; }
-    .botonComprar div {
-      width: 330px;
-      height: 330px;
-      border: 2px; }
-  .tamañoFuente {
-    font-size: 15px; }
-  .responsiveNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px; } }
-
-/*RESPONSIVE ENVIOS*/
-/*Tablet*/
-@media screen and (max-width: 1024px) {
-  .gridEnvio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; } }
-
-/*Celular*/
-@media screen and (max-width: 500px) {
-  .gridEnvio {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
-  img {
-    width: 80%;
-    height: auto; }
-  .tamañoFuente {
-    font-size: 15px; }
-  .responsiveNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px; } }
-
-/*RESPONSIVE CONTACTO*/
-/*Tablet*/
-@media screen and (max-width: 1024px) {
-  .gridContacto {
-    display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: repeat 3, 1fr; } }
-
-/*Celular*/
-@media screen and (max-width: 500px) {
-  .gridContacto {
-    display: grid;
-    grid-template-columns: repeat 1fr;
-    grid-template-rows: repeat 4, 1fr; }
-  img {
-    width: 80%;
-    height: auto; }
-  .tamañoFuente {
-    font-size: 15px; }
-  .responsiveNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px; } }
-
-/*RESPONSIVE PROMOS*/
-/*Tablet*/
-@media screen and (max-width: 1024px) {
-  .gridPromos {
-    display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: repeat 3, 1fr; }
-  .promosConSem {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-  .textoCent {
-    margin: 20px; } }
-
-/*Celular*/
-@media screen and (max-width: 500px) {
-  .gridPromos {
-    display: grid;
-    grid-template-columns: repeat 1fr;
-    grid-template-rows: repeat 4, 1fr; }
-  .promosConSem {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-  .textoCent {
-    margin: 20px; }
-  img {
-    width: 80%;
-    height: auto; }
-  .tamañoFuente {
-    font-size: 15px; }
-  .responsiveNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px; } }
-
-/*RESPONSIVE CDS*/
-/*TABLET*/
-@media screen and (max-width: 1024px) {
-  .gridCds {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
-  .botonComprar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; }
-    .botonComprar div {
-      width: 330px;
-      height: 330px;
-      border: 2px;
-      margin: 10px; } }
-
-/*CELULAR*/
-@media screen and (max-width: 500px) {
-  .gridCds {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0fr 1fr 1fr 1fr; }
-  .tamañoFuente {
-    font-size: 15px; }
-  .responsiveNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px; } }
 
 /*CSS INDEX*/
 .menuYLogo {
@@ -437,11 +258,66 @@ div.container {
 .tamañoFuente {
   font-size: 15px; }
 
+/*RESPONSIVE INDEX*/
+/*TABLET*/
+@media screen and (max-width: 1024px) {
+  .menuYLogo {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 0, 2fr; }
+  .botonComprar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .botonComprar div {
+      width: 330px;
+      height: 330px;
+      border: 2px;
+      margin: 10px; } }
+
+/*CELULAR*/
+@media screen and (max-width: 500px) {
+  .menuYLogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0, 2fr 0, 2fr 0, 2fr 0, 2fr; }
+  .menu li {
+    display: list-item;
+    font-size: 15px;
+    color: #000000;
+    background-color: #ffffff;
+    width: 100%; }
+    .menu li a {
+      background-color: #ffffff; }
+    .menu li:hover ul {
+      color: #000000;
+      background-color: #00cbf3; }
+  .h2T {
+    font-size: 20px; }
+  .botonComprar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    .botonComprar div {
+      width: 330px;
+      height: 330px;
+      border: 2px; }
+  .tamañoFuente {
+    font-size: 15px; }
+  .responsiveNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; } }
+
 /*CSS CDS*/
 .gridCds {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.1fr 2.4fr 0.1fr 0.1fr;
+  grid-template-rows: 0.6fr 0.3fr 0.2fr, 6fr 0.1fr;
+  gap: 9px 9px;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -519,6 +395,37 @@ div.container {
   .animCD:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
+
+/*RESPONSIVE CDS*/
+@media screen and (max-width: 1024px) {
+  .gridCds {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 0, 2fr; }
+  .botonComprar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+  .botonComprar div {
+    width: 330px;
+    height: 330px;
+    border: 2px;
+    margin: 10px; } }
+
+/*CELULAR*/
+@media screen and (max-width: 500px) {
+  .gridCds {
+    display: grid;
+    grid-template-columns: 1 fr 1 fr;
+    grid-template-rows: 1fr,0fr,1fr,1fr,1fr; }
+  .tamañoFuente {
+    font-size: 15px; }
+  .responsiveNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; } }
 
 /*CSS CONTACTO*/
 .gridContacto {
@@ -603,11 +510,36 @@ div.container {
 .tamañoFuente {
   font-size: 15px; }
 
+/*RESPONSIVE CONTACTO*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  .gridContacto {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 1fr; } }
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+  .gridContacto {
+    display: grid;
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: repeat 4, 1fr; }
+  img {
+    width: 80%;
+    height: auto; }
+  .tamañoFuente {
+    font-size: 15px; }
+  .responsiveNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; } }
+
 /*CSS ENVIOS*/
 .gridEnvios {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.6fr 0.3fr 0.2fr 0.2fr, 6fr 0.1fr;
+  grid-template-rows: 0.6fr 0.3fr 0.2fr 1fr, 1fr, 0.1fr;
   gap: 9px 9px;
   justify-content: center;
   align-content: center;
@@ -657,6 +589,14 @@ div.container {
   justify-content: center;
   align-items: center; }
 
+.retiro {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+
 .footerT {
   grid-area: footerT;
   background-color: #000000;
@@ -670,6 +610,31 @@ div.container {
 
 .tamañoFuente {
   font-size: 15px; }
+
+/*RESPONSIVE ENVIOS*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  .gridEnvio {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 1fr; } }
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+  .gridEnvio {
+    display: grid;
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: repeat 4, 1fr; }
+  img {
+    width: 80%;
+    height: auto; }
+  .tamañoFuente {
+    font-size: 15px; }
+  .responsiveNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; } }
 
 /*CSS PROMOS*/
 .gridPromos {
@@ -761,3 +726,46 @@ div.container {
 
 .footerT a {
   text-decoration: none; }
+
+/*RESPONSIVE PROMOS*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+  .gridPromos {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 3, 1fr; }
+  .promosConSem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .textoCent {
+    margin: 20px; } }
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+  .gridPromos {
+    display: grid;
+    grid-template-columns: repeat 1fr;
+    grid-template-rows: repeat 4, 1fr; }
+  .promosConSem {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .textoCent {
+    margin: 20px; }
+  img {
+    width: 80%;
+    height: auto; }
+  .tamañoFuente {
+    font-size: 15px; }
+  .responsiveNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; } }

@@ -105,3 +105,38 @@ a {
 .tamañoFuente {
     font-size: 15px;
 }
+
+/*RESPONSIVE CONTACTO*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+    .gridContacto {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+    .gridContacto {
+        display: grid;
+        grid-template-columns: repeat (1fr);
+        grid-template-rows: repeat (4, 1fr);
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+}

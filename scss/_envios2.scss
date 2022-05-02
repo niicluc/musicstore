@@ -2,7 +2,7 @@
 .gridEnvios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.6fr 0.3fr 0.2fr 0.2fr, 6fr 0.1fr;
+    grid-template-rows: 0.6fr 0.3fr 0.2fr 1fr, 1fr, 0.1fr;
     gap: 9px 9px;
     justify-content: center;
     align-content: center;
@@ -69,6 +69,18 @@ a {
     align-items: center;
 }
 
+
+.retiro{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .footerT {
     grid-area: footerT;
     background-color: #000000;
@@ -85,4 +97,39 @@ a {
 
 .tamañoFuente {
     font-size: 15px;
+}
+
+/*RESPONSIVE ENVIOS*/
+/*Tablet*/
+@media screen and (max-width: 1024px) {
+    .gridEnvio {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 500px) {
+    .gridEnvio {
+        display: grid;
+        grid-template-columns: repeat (1fr);
+        grid-template-rows: repeat (4, 1fr);
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tamañoFuente {
+        font-size: 15px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
 }
